@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html >
+    <link rel="stylesheet" href="/css/izmir.css" />
+    <link rel="shortcut icon" href="istockphoto-925225820-170667a.jpeg" type="image/x-icon">
+    <head>
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" integrity="sha512-csw0Ma4oXCAgd/d4nTcpoEoz4nYvvnk21a8VA2h2dzhPAvjbUIK6V3si7/g/HehwdunqqW18RwCJKpD7rL67Xg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="sec.css">
+        <title>PETROLCAL</title>
+    </head>
+    <body>
+        <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+              <img width="200px" src="Screen_Shot_2022-08-31_at_11.41.53_PM-removebg-preview (1).png" alt="">
+            </div>
+            <i class='bx bx-menu' id="btn"></i>
+        </div> 
+      <ul class="nav_list">
+            <li> 
+          
+                <i class='bx bx-search' ></i>
+                <input type="text" placeholder="Search...">
+            <span class="tooltip">Search</span>
+            </li>
+                <li>
+                   <a href="#">
+                    <i class='bx bxs-bar-chart-square' ></i>
+                    <span class="links_name">charts</span>
+                   </a> 
+                    <span class="tooltip">charts</span>
+                </li>
+               
+                    <li>
+                       <a href="currency.html" target="_blank" >
+                        <i class='bx bxs-calculator' ></i>
+                        <span class="links_name">converter</span>
+                       </a> 
+                        <span class="tooltip">converter</span>
+                    </li>
+                    <li>
+                        <a href="page.html">
+                            <i class='bx bx-home' ></i>
+                         <span class="links_name">home</span>
+                        </a> 
+                         <span class="tooltip">home</span>
+                     </li>
+                     <li>
+                        <a href="oil.html" target="_blank">
+                            <i class='bx bxs-droplet'></i>
+                         <span class="links_name">petrolcal</span>
+                        </a> 
+                         <span class="tooltip">petrolcal</span>
+                     </li>
+        </ul>
+        <div class="profile_content">
+            <div class="profile">
+                <div class="profile_details">
+                    <img src="IMG_6676.jpeg" alt="">
+                    <div class="name_job">
+                        <div class="name">NOURA WALEED</div>
+                        <div class="job">NONE</div>
+                    </div>
+                </div>
+                <i class='bx bx-log-in' id="log_out"></i>
+            </div>
+        </div>
+       </div>
+       <div class="home_side">
+       
+        <div class="top">
+         <iframe  id="chart_iframe" valign="middle" margin="0px" width="888px" height="680" marginheight="0" marginwidth="0" frameborder="0" vspace="0" hspace="0" scrolling="NO" src="https://www.macrotrends.net/assets/php/chart_iframe_comp.php?id=2566&amp;url=crude-oil-prices-today-live-chart"></iframe>
+    
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+          google.charts.load("current", {packages:["corechart"]});
+          google.charts.setOnLoadCallback(drawChart);
+          function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+              ['OIL', 'Hours per Day'],
+              ['USA',     6],
+              ['SAUDI ARABIA', 4.9],
+              ['RUSSIA', 5],
+              ['CANADA', 3],
+              ['IRAQ', 2.8]
+              ]);
+            var options = {
+              title: 'OIL PRODUCTION IN 2022',
+              pieHole: 0.4,
+            };
+    
+            var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+            chart.draw(data, options);
+          }
+        </script>
+         <div id="donutchart" style="width: 500px; height: 680px;"></div>
+         </div>
+        <iframe  class="table" src="https://datahub.io/core/oil-prices/r/3.html" width="100%" height="100%" frameborder="0"></iframe> 
+    
+        
+    </div>
+    
+ 
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  
+     
+
+    </div>
+   
+    <!-- this div for the body -->
+    <script src="page.js"></script>
+    <script src="oil.js"></script>
+    </body>
+    </html>
